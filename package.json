@@ -1,0 +1,22 @@
+{
+  "name": "lodown-jsreyes97",
+  "version": "1.0.1",
+  "description": "An npm functional programming library project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsreyes97/lodown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsreyes97/lodown/issues"
+  },
+  "homepage": "https://github.com/jsreyes97/lodown#readme"
+}
