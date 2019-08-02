@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/jsreyes97/lodown/issues"
   },
-  "homepage": "https://github.com/jsreyes97/lodown#readme"
+  "homepage": "https://github.com/jsreyes97/lodown#readme",
+  "dependencies": {
+    "lodown-jsreyes97": "^1.0.1"
+  }
 }
