@@ -62,6 +62,8 @@ module.exports.indexOf = indexOf;
 /*first: designed to print the first element of an array
 *@param: array
 *@param: number
+*@Edge Case: What if <number> is negative?
+*@edge Case: What if <number> is greater than <array>.length?
 *@return: returns the frist index of an array
 */
 function first(array, number) {
@@ -79,6 +81,8 @@ module.exports.first = first;
 /*last: designed to print the last inex of an array
 *@param: array
 *@param: number
+*@Edge Case: What if <number> is negative?
+*@Edge Case: What if <number> is greater than <array>.length?
 *@return: returns the last index of an array
 */
 function last(array, number){
@@ -109,10 +113,8 @@ function contains(array, value){
       return false;//returns false otherwise
     }
 module.exports.contains = contains;
-/*unique: designed to add all duplicated values into a new array
+/*unique: returns an array containing one of each of the elements from the array that was passed in. No duplicates.
 *@param: array
-*@return: returns a new array of duplicated values in an array
-*
 */
 function unique(array){
     var result = [];
@@ -144,7 +146,7 @@ function filter(array, action){
     
 }
  module.exports.filter = filter;
- /*reject: designed to return a new array of falsey values?
+ /*reject: takes an array of the elements that returned false when passed through the function
  *@param: array , function
  *@return: Returns falsey values into a new array
  */
@@ -161,7 +163,7 @@ function filter(array, action){
 return results;
 }
 module.exports.reject = reject;
-/*partition:designed to return one array into two sub arrays
+/*partition:designed to take one array and return two seperate arrays, one for truthies, and one for falseys
 *@param: array, function
 *@return: returns an array into sub arrays
 */
@@ -200,7 +202,7 @@ function map(collection, test){
     return result1; 
 }
 module.exports.map = map;
-/*pluck: desiged to take each elemenet and return their value to an array
+/*pluck: takes an array of objects and returns their values into an array
 *@param: array
 *@param: value
 */
@@ -215,7 +217,7 @@ function pluck(array, value){
     }); return list;
 }
 module.exports.pluck = pluck;
-/*every: designed to check if all elements in an array pass a test
+/*every: designed to check if all elements in an array pass a test and add them to an array
 *@param: collection: [Array], {Object}
 *@return: Returns a boolean weather all elements paass test or not.
 */
@@ -242,7 +244,7 @@ function every(collection, test){
     return y;
 }
 module.exports.every = every;
-/*some: Deesigned to loop over a collection and check which elements pass a certian test
+/*some: Deesigned to loop over a collection and cmake an array of falsey values
 *@param: collection:[Array], {Object}, Function
 *@return: Returns a boolean 
 */
@@ -268,7 +270,7 @@ function some(collection, test){
     return y;
 }
 module.exports.some = some;
-/*extend: Designed to make a child object out of the primary object
+/*extend: takes multiple object and takes the first object and adds all other objects to that object 
 *@param: Object
 *@return: returns a clone of the first object
 */
